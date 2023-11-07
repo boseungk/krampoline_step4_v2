@@ -16,7 +16,7 @@ spec:
       containers:
         - name: mariadb
           # 여러분의 mariadb image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_eb22ae13a9fd
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_af03780b25ab
           env:
             - name: TZ
               value: Asia/Seoul
