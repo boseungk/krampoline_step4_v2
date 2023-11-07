@@ -6,6 +6,8 @@ FLUSH PRIVILEGES;
 
 USE `krampoline`;
 
+SET foreign_key_checks = 0;
+
 DROP TABLE IF EXISTS `sample_data`;
 CREATE TABLE `sample_data` (
                                `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -28,5 +30,6 @@ create table `celebrity`(
     `gender`          enum ('FEMALE','MALE') not null,
     `profile_image`   varchar(255),
     primary key (`celebrity_id`)
-) engine=InnoDB COLLATE=utf8mb4_general_ci;
+) engine=InnoDB;
 
+SET foreign_key_checks = 1;
