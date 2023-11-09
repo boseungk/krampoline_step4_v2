@@ -35,13 +35,13 @@ spec:
             - name: IAMPORT_API_KEY
               valueFrom:
                 secretKeyRef:
-                  name: iam-port-secret
+                  name: iam-port-api
                   key: IAMPORT_API_KEY
             - name: IAMPORT_API_SECRET
               valueFrom:
                 secretKeyRef:
-                  name: iam-port-secret-key
-                  key: IAMPORT_API_SECRET_KEY
+                  name: iam-port-secret
+                  key: IAMPORT_API_SECRET
 
           resources:
             requests:
