@@ -32,17 +32,6 @@ spec:
                   name: aws-secret
                   key: AWS_SECRET_ACCESS_KEY
 
-            - name: IAMPORT_API_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: iam-port-api
-                  key: IAMPORT_API_KEY
-            - name: IAMPORT_API_SECRET
-              valueFrom:
-                secretKeyRef:
-                  name: iam-port-secret
-                  key: IAMPORT_API_SECRET
-
           resources:
             requests:
               memory: 1Gi
