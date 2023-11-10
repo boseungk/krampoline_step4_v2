@@ -21,6 +21,16 @@ spec:
               value: Asia/Seoul
             - name: DATABASE_URL
               value: jdbc:mariadb://mariadb:3306/krampoline
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: aws-access
+                  key: AWS_ACCESS_KEY_ID
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-secret
+                  key: AWS_SECRET_ACCESS_KEY
           resources:
             requests:
               memory: 1Gi
