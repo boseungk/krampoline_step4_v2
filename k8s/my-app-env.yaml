@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: my-app-container-env
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_67234d158ca8
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_116a7bbd29f0
           env:
             - name: AWS_ACCESS_KEY_ID
               valueFrom:
