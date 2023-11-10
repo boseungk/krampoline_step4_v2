@@ -15,7 +15,7 @@ spec:
       containers:
         - name: backend
           # 여러분의 backend image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_116a7bbd29f0
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_b6dd6dce75b4
           env:
             - name: TZ
               value: Asia/Seoul
@@ -31,18 +31,6 @@ spec:
                 secretKeyRef:
                   name: aws-secret
                   key: AWS_SECRET_ACCESS_KEY
-
-            - name: IAMPORT_API_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: iam-port-api
-                  key: IAMPORT_API_KEY
-
-            - name: IAMPORT_API_SECRET
-              valueFrom:
-                secretKeyRef:
-                  name: iam-port-secret
-                  key: IAMPORT_API_SECRET
 
           resources:
             requests:
